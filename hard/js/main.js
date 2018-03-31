@@ -5,3 +5,27 @@ numMultiply =	(num%10)*(Math.floor(num/10)%10)*(Math.floor(num/100)%10)*(Math.fl
 alert(
 	numMultiply**3
 	);
+
+var week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+var date = new Date();
+
+for (i = 0; i < week.length; i++){
+	if (i == date.getDay()){
+		var a = '<i>' + week[i] + '</i>';		
+	} else {
+		var a = week[i];
+	}
+	if (week[i] === 'Sunday' || week[i] === 'Saturday'){
+		document.writeln('<b>' + a + '</b>');
+	} else{
+		document.writeln(a);
+	}
+	document.writeln('<br>');
+}
+
+var arr = ['34567', '78966', '8567868', '67868', '3657', '867', '907789'];
+
+for (i = 0; i < arr.length; i++)
+	if (arr[i].charAt(0) == '3' || arr[i].charAt(0) == '7'){
+		console.log(arr[i])
+	}
