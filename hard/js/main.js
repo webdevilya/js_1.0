@@ -53,3 +53,34 @@ let b = 0;
  	}
  }
  console.log(Math.sqrt(b));
+
+
+let arr3 = [];
+let sum = 0;
+let userLength = prompt("Введите длину массива");
+
+function randomInteger(min, max) {
+    var rand = min + Math.random() * (max + 1 - min);
+    rand = Math.floor(rand);
+    return rand;
+  }
+
+for(i = 0; i < userLength; i++){
+	let arr4 = [];
+	for(i1 = 0; i1 < 4; i1++){
+		arr4[i1] = randomInteger(1,5);
+		sum = sum + arr4[i1];	
+	};	
+	arr3[i] = arr4;	
+}
+console.log(arr3);
+alert(sum);
+
+
+
+
+
+
+
+
+ 
